@@ -1,4 +1,4 @@
-package com.uvg.directhealth.model;
+package com.uvg.directhealth.model.user;
 
 import com.uvg.directhealth.util.Role;
 import jakarta.persistence.EnumType;

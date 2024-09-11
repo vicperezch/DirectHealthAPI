@@ -1,4 +1,4 @@
-package com.uvg.directhealth.model;
+package com.uvg.directhealth.model.user;
 
 import lombok.Data;
 
