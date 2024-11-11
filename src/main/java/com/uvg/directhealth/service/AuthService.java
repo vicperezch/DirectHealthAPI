@@ -58,6 +58,7 @@ public class AuthService {
 
         response.setResult("SUCCESS");
         response.setRole(user.getRole());
+        response.setId(user.getId());
 
         return new ResponseEntity<>(response, HttpStatus.OK);
     }

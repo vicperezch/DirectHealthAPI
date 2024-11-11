@@ -15,10 +15,8 @@ import java.util.List;
 public class Prescription {
     @MongoId
     private String id;
-    @DBRef
-    @NonNull private User doctor;
-    @DBRef
-    @NonNull private User patient;
+    @NonNull private String doctorId;
+    @NonNull private String patientId;
     @NonNull private Date emissionDate;
     @NonNull private List<Medication> medicationList;
     private List<String> notes;
