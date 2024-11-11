@@ -14,9 +14,7 @@ import java.util.Date;
 public class Appointment {
     @MongoId
     private String id;
-    @DBRef
-    @NonNull private User doctor;
-    @DBRef
-    @NonNull private User patient;
+    @NonNull private String doctorId;
+    @NonNull private String patientId;
     @NonNull private Date date;
 }
