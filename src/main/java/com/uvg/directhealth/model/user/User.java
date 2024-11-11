@@ -3,6 +3,7 @@ package com.uvg.directhealth.model.user;
 import com.uvg.directhealth.util.Role;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
+import lombok.Builder;
 import lombok.Data;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.MongoId;
@@ -11,6 +12,7 @@ import java.util.Date;
 
 @Document("users")
 @Data
+@Builder
 public class User {
     @MongoId
     private String id;

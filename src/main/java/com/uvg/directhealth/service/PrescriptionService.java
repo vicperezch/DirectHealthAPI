@@ -11,7 +11,7 @@ import java.util.Optional;
 @Service
 @AllArgsConstructor
 public class PrescriptionService {
-    private PrescriptionRepository prescriptionRepository;
+    private final PrescriptionRepository prescriptionRepository;
 
     public List<Prescription> findAll() {
         return prescriptionRepository.findAll();
